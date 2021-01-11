@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+}
+
+:root {
+    --honeydew: #F1FAEE;
+}
+
+main{
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: max-content(345px) auto;
+    grid-template-rows: 125px auto;
+    grid-template-areas: 
+    'header header'
+    'sidebar main-content'
+    ;
+
+    /*
+    For printing purposes
+    margin-left: 1%;*/
+}
+
+.header-container{
+    grid-area: header;
+    background-color: #457B9D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header{
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    border: 2px solid var(--honeydew);
+    color: var(--honeydew);
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #A8DADC;
+    border-top: 18px solid var(--honeydew);
+    height: 100%;
+}
+
+.main-content{
+    grid-area: main-content;
+}
+
+hr{
+    margin-bottom: 15px;
+}
+
+.bordered{
+    border-left: 50px solid var(--honeydew);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+#portrait{
+    height:125px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 4px;
+}
+h3{
+    padding-top:10px;
+}
+h2{
+    padding-bottom: 10px;
+}
+h5{
+    padding-bottom: 12px;
+}
+h6{   
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+a[href]{
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar li{
+    list-style-type: none;
+}
+
+li{
+    padding-bottom: 5px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.sidebar ul{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: -16px;
+}
+
+.skills{
+    width: max-content; 
+}
+
+.skill-list1{
+    float: left;
+    padding-left: 15px;
+    padding-right: 85px;
+}
+
+.skill-list2{
+    float: right;
+}
+
+.time{
+    display: grid;
+    grid-template-columns: 100px 300px;
+    column-gap: 20px;
+}
+
+.main-content p{
+    padding-bottom: 12px;
+}
+
+.timeline-value > h5{
+    color: #E63946;
+}
+#tel{
+    list-style-image: url("img/phone-call.png");
+}
+#email{
+    list-style-image: url("img/email.png");
+}
+#website{
+    list-style-image: url("img/internet.png");
+}
+#linkedin{
+    list-style-image: url("img/linkedin.png");
+}
+#github{
+    list-style-image: url("img/github.png");
+}
+#twitter{
+    list-style-image: url("img/twitter.png");
+}
+
+section a[href]{
+    position: relative;
+    top: -3px;
+}
+
