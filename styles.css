@@ -188,10 +188,6 @@ section a[href]{
     header{
         padding-left: 25px;
         padding-right: 25px;
-        padding-top: 12px;
-        padding-bottom: 15px;
-        border: 2px solid var(--honeydew);
-        color: var(--honeydew);
     }
 }
 
